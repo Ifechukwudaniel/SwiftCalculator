@@ -14,4 +14,5 @@ enum Operations {
     case multiplication
     case division
     case modulo
+    case plusOrMinus
 }

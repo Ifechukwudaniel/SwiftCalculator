@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     @IBAction func onModulePressed(_ sender: Any) {
         if(calculator.isFloat){
             calculator.setOperation(.modulo)
-            return  onEqualPressed("jdjjd")
+            return  onEqualPressed("app")
         }
         return calculator.setOperation(.modulo)
     }
@@ -103,8 +103,15 @@ class ViewController: UIViewController {
         answerLabel.text =   calculator.caculate()
     }
     
+    @IBAction func onPlusMinusPressed(_ sender: Any) {
+        calculator.setOperation(.plusOrMinus)
+        return  onEqualPressed("app")
+    }
+    
+    
     func setValue(_ value:String)  {
         answerLabel.text = value
     }
+    
 }
 

@@ -67,6 +67,8 @@ class  Calculator {
             answer = "\( previousValue.toInteger() * curenntValue.toInteger())"
         case .modulo:
             answer =  "\( previousValue.toInteger() % curenntValue.toInteger())"
+        case .plusOrMinus:
+            answer = "\(abs(previousValue.toInteger()))"
         default:
             answer =  "\(0)"
         }
@@ -91,6 +93,8 @@ class  Calculator {
             answer = "\( previousValue.toFloat()  * curenntValue.toFloat() )"
         case .modulo:
             answer =  "\( previousValue.toFloat() / 100)"
+        case .plusOrMinus:
+            answer =  "\(abs(previousValue.toFloat()))"
         default:
             answer =  "\(0)"
         }
