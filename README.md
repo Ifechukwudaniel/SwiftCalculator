@@ -1,8 +1,7 @@
 # Calculator App With Swift And Storyboard
 
-<img src="Documentation/1.png" alt="image1" style="" />
-
-<img src="Documentation/2.png" alt="image2" style="" />
+![GitHub Logo](Documentation/1.png)
+![GitHub Logo](Documentation/1.png)
 
 Simple iOS calculator by [@Ifechukwudaniel](https://github.com/Ifechukwudaniel)
 
