@@ -79,6 +79,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onModulePressed(_ sender: Any) {
+        if(calculator.isFloat){
+            calculator.setOperation(.modulo)
+            return  onEqualPressed("jdjjd")
+        }
         return calculator.setOperation(.modulo)
     }
     

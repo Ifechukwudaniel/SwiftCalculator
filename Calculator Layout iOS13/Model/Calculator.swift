@@ -14,9 +14,9 @@ class  Calculator {
     let zero = "0"
     public var curenntValue:String! = "0"
     public var value:String! = nil
-    public var previousValue:String! = nil
+    public var previousValue:String! = "0"
     private var operand:Operations! = nil
-    private var isFloat:Bool = false
+    public var isFloat:Bool = false
     
     
     
@@ -39,7 +39,11 @@ class  Calculator {
         return
     }
     
-    public  func  clearValue() { return  curenntValue = zero }
+    public  func  clearValue() {
+        curenntValue = zero
+        isFloat = false
+        return
+    }
     
     public func setOperation(_ opertaion:Operations){
         operand = opertaion
@@ -91,7 +95,7 @@ class  Calculator {
             answer =  "\(0)"
         }
      
-     previousValue = nil
+     previousValue = "0"
      curenntValue = answer
      return answer!
     }
