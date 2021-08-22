@@ -1,27 +1,34 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Calculator App With Swift And Storyboard
 
-# Calculator Layout Boss Challenge
+<img src="Documentation/1.png" alt="image1" style="" />
 
-No knowledge is your own until you put it into practice. Using what you've learnt about auto layout, stack views and setting constraints, create the following UI. 
+<img src="Documentation/2.png" alt="image2" style="" />
 
-## Portrait
+Simple iOS calculator by [@Ifechukwudaniel](https://github.com/Ifechukwudaniel)
 
-![Portrait](Documentation/Portrait.png)
+### Usage
 
-## Landscape
-![Landscape](Documentation/Landscape.png)
+1.  Download the repository
 
-This is a difficult challenge. You pass the challenge if you can create the vertical and horizontal stacks required for the layout. Once you've done that, you can also get extra credit if you figure out how to layout the small details.
+```
+$ git clone git@github.com:Ifechukwudaniel/SwiftCalculator.git
+$ cd SwiftCalculator
+```
 
-Bronze Medal: If you can figure out how to have the layout be constrained to the Safe Areas in Portrait and Landscape. (Notice the distance to the edges is different between landscape and portrait.
+2.  Open the project in Xcode
 
-Silver Medal: If you can figure out how to indent the Label with the 0 so that there is 20px distance from the right edge of the screen.
+```
+$ open Calculator Layout iOS13.xcodeproj
+```
 
-Gold Medal: If you can figure out how to make the 0 button take up twice as much width as the "." and "=" buttons.
+3. Ruse the run the app
 
-If you get stuck, check out the solution video in the next lesson.
+### Requirements
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+- Xcode 6.3
+- iOS 8
 
-![End Banner](Documentation/readme-end-banner.png)
+### Credits
 
+- [@Ifechukwudaniel](https://github.com/Ifechukwudaniel) for most of the application
+- [appbrewery](https://github.com/appbrewery) inital setup and storyboard
