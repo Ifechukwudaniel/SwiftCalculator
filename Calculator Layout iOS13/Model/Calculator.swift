@@ -47,7 +47,10 @@ class  Calculator {
     
     public func setOperation(_ opertaion:Operations){
         operand = opertaion
-        previousValue  = curenntValue
+        print(previousValue!, curenntValue!)
+        if(previousValue == "0"){
+            previousValue  = curenntValue
+        }
         curenntValue="0"
         return
     }
@@ -55,6 +58,7 @@ class  Calculator {
     public func caculate()->String {return isFloat ? caculateFloat() : caculateInt()}
     
     public func caculateInt()->String {
+        print(previousValue!, operand!, curenntValue!)
         var answer:String?
         switch operand {
         case .addition:
@@ -68,12 +72,11 @@ class  Calculator {
         case .modulo:
             answer =  "\( previousValue.toInteger() % curenntValue.toInteger())"
         case .plusOrMinus:
-            answer = "\(abs(previousValue.toInteger()))"
+            answer = "\(previousValue.toInteger().nagateFn())"
         default:
             answer =  "\(0)"
         }
-     
-     previousValue = nil
+     previousValue = "0"
      curenntValue = answer
      return answer!
     }
@@ -94,7 +97,7 @@ class  Calculator {
         case .modulo:
             answer =  "\( previousValue.toFloat() / 100)"
         case .plusOrMinus:
-            answer =  "\(abs(previousValue.toFloat()))"
+            answer =  "\(previousValue.toFloat().nagateFn())"
         default:
             answer =  "\(0)"
         }
