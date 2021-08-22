@@ -1,7 +1,7 @@
 # Calculator App With Swift And Storyboard
 
 ![GitHub Logo](Documentation/1.png)
-![GitHub Logo](Documentation/1.png)
+![GitHub Logo](Documentation/2.png)
 
 Simple iOS calculator by [@Ifechukwudaniel](https://github.com/Ifechukwudaniel)
 
